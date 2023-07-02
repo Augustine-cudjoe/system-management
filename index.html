@@ -34,82 +34,54 @@
     </ul>
     </div>
   <div class="main-container">
-    <div class="right-side">
+    <div class="top-side">
         
             <div class="top-content">
-                <div class="details">
-                    <h3>Employee</h3> 
-                    <h3>300</h3> 
-                 </div>
-                 <div class="details">
-                     <h3>Vacation</h3> 
-                     <h3>50</h3> 
-                 </div>
-                 <div class="details">
-                     <h3>At work place</h3> 
-                     <h3>300</h3> 
-                 </div>
-                 <div class="details">
-                     <h3>Employee cancel</h3> 
-                     <h3>300</h3> 
-                 </div>
+                <table class="table">
+                    <tr class="table-row">
+                        <td>
+                            <form  class="form" onsubmit="event.preventDefault(); onFormSubmit();">
+                                <div class="">
+                                    <h1 id="heading1">Register</h1>
+                                    <p id="p1">Please fill  this form to create a Record.</p>
+                                    <hr>
+                            
+                                    <label id="label" for="Emp-Name"><b>Name</b></label>
+                                    <input type="text" placeholder="Enter Name" name="name" id="name" required >
+                            
+                                    <label id="label" for="City"><b>Work Place</b></label>
+                                    <input type="text" placeholder="Enter City" name="city" id="city" required >
+                            
+                                    <label id="label" for="salary"><b>Salary</b></label>
+                                    <input type="number" name="salary" id="salary"placeholder="Salary" required>
+                                    <hr>
+                            
+                                    <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+                                    <button type="submit" name="submit"class="registerbtn">Submit</button>
+                                </div>
+                            </form>
+                        </td>
+                       
+                    </tr>
+                    
+                </table>
               </div>
             </div>
            <div class="right-side">
             <div class="content">
-            <table id="table" class="table table-primary table-striped">
+            <table id="empList" class="table table-primary table-striped">
                 <thead>
                     <tr>
-                        <th>Image</th>
+                        
                         <th>Name</th>
                         <th>Work place</th>
                         <th>Salary</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                      <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkEl8bcmEEFoU6icuDPdyDjM4GeXOV3hZP68muI5ZYg&s" ></td>
-                      <td>Company Name</td>
-                      <td>Head Office</td>
-                      <td>50,000</td>
-                  </tr>
-                  <tr>
-                    <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkEl8bcmEEFoU6icuDPdyDjM4GeXOV3hZP68muI5ZYg&s" ></td>
-                    <td>Company Name</td>
-                    <td>Head Office</td>
-                    <td>50,000</td>
-                </tr>
-                <tr>
-                    <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkEl8bcmEEFoU6icuDPdyDjM4GeXOV3hZP68muI5ZYg&s" ></td>
-                    <td>Company Name</td>
-                    <td>Head Office</td>
-                    <td>50,000</td>
-                </tr>
-                <tr>
-                    <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkEl8bcmEEFoU6icuDPdyDjM4GeXOV3hZP68muI5ZYg&s" ></td>
-                    <td>Company Name</td>
-                    <td>Head Office</td>
-                    <td>50,000</td>
-                </tr>
-                <tr>
-                    <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkEl8bcmEEFoU6icuDPdyDjM4GeXOV3hZP68muI5ZYg&s" ></td>
-                    <td>Company Name</td>
-                    <td>Head Office</td>
-                    <td>50,000</td>
-                </tr>
-                <tr>
-                    <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkEl8bcmEEFoU6icuDPdyDjM4GeXOV3hZP68muI5ZYg&s" ></td>
-                    <td>Company Name</td>
-                    <td>Head Office</td>
-                    <td>50,000</td>
-                </tr>
-                <tr>
-                    <td> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUkEl8bcmEEFoU6icuDPdyDjM4GeXOV3hZP68muI5ZYg&s" ></td>
-                    <td>Company Name</td>
-                    <td>Head Office</td>
-                    <td>50,000</td>
-                </tr>
-
+                <tbody id="tab_body">
+                 
                 </tbody>
             </table>
         </div>
